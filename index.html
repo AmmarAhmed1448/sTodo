@@ -9,7 +9,30 @@
 <body>
     <h1>This is my todo web app</h1>
 
+    <div class="todo-form">
+        <label for="input-title">Title</label>
+        <br>
+        <input type="text" id="input-title">
 
+        <br>
+        <label for="input-todo">Your todo</label>
+        <br>
+        <textarea id="input-todo"></textarea>
+
+        <br><br>
+        <input type="button" value="Create" onclick="createTodo()">
+    </div>
+
+
+    <h3>Your Todos</h3>
+    <div class="card">
+        <div class="container">
+          <h4><b>Title</b></h4>
+          <p class="todo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consectetur tempore accusamus doloremque culpa, impedit, nostrum recusandae id itaque repellendus optio ipsa delectus perferendis odio?</p>
+          <input type="button" value="Edit" onclick="edit(event)">
+          <input type="button" value="Delete" onclick="deleteTodo(event)">
+        </div>
+      </div>
 
     <script src="index.js"></script>
 </body>
